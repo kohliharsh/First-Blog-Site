@@ -64,6 +64,6 @@ app.post("/login",function(req,res){
     console.log(email);
 })
 
-app.listen(3000,function(){
+app.listen(process.env.PORT || 3000,function(){
     console.log("server started");
 })
